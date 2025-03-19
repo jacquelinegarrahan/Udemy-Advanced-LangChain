@@ -2,6 +2,18 @@
 
 Welcome to the course on **Advanced RAG with Langchain**. This repository contains Jupyter notebooks, helper scripts, app files, and Docker resources designed to guide you through advanced Retrieval-Augmented Generation (RAG) techniques with Langchain.
 
+## Setup
+
+You can use poetry and pyenv to set up your environment.
+```bash
+# set python
+pyenv local 3.12.7
+#install
+poetry install
+# activate the environment
+poetry env activate
+```
+
 ## Course Content
 
 ### Jupyter Notebooks
@@ -46,6 +58,12 @@ The `app` folder includes a `docker-compose.yaml` file to start all required ser
 2. Run `docker-compose up` to start all services.
 3. Access the chatbot via your browser at the specified address.
 
+* Note: If you run into a permission issue with the `wait-for-postgres.sh` file, run the below and try again:
+
+```bash
+chmod +x app/backend/wait-for-postgres.sh
+```
+
 ### Data Folder
 
 The `data` folder contains datasets required for the exercises and examples provided in the notebooks.
@@ -67,3 +85,4 @@ This course repository is licensed under a restricted license. You are allowed t
 5. Experiment with the RAG pipelines in the notebooks to understand their evaluation process.
 
 Happy learning!
+

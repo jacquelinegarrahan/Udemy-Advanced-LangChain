@@ -179,11 +179,9 @@ safetensors = "0.4.3"
 scikit-learn = "1.5.0"
 scipy = "1.14.0"
 seaborn = "0.13.2"
-
-# MacOS (Apple Silicon) specific dependencies
-torch = { version = "2.3.1", source = "torch_stable", markers = "sys_platform == 'darwin' and platform_machine == 'arm64'" }
-torchaudio = { version = "2.3.1", markers = "sys_platform == 'darwin' and platform_machine == 'arm64'" }
-torchvision = { version = "0.18.1", markers = "sys_platform == 'darwin' and platform_machine == 'arm64'" }
+torch = "2.3.1"
+torchaudio = "2.3.1"
+torchvision = "0.18.1"
 
 [[tool.poetry.source]]
 name = "torch_stable"
